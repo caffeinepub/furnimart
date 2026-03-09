@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/assets/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm furniture retail palette — walnut, cream, terracotta */
+    --background: 97 0.01 80;
+    --foreground: 22 0.04 50;
+
+    --card: 99 0.008 75;
+    --card-foreground: 22 0.04 50;
+
+    --popover: 99 0.008 75;
+    --popover-foreground: 22 0.04 50;
+
+    --primary: 33 0.09 48;
+    --primary-foreground: 97 0.01 80;
+
+    --secondary: 90 0.02 70;
+    --secondary-foreground: 35 0.06 48;
+
+    --muted: 93 0.015 75;
+    --muted-foreground: 55 0.04 58;
+
+    --accent: 63 0.13 42;
+    --accent-foreground: 97 0.01 80;
+
+    --destructive: 50 0.22 25;
+    --destructive-foreground: 97 0.01 80;
+
+    --border: 88 0.02 72;
+    --input: 88 0.02 72;
+    --ring: 63 0.13 42;
+
+    --radius: 0.5rem;
+
+    --chart-1: 63 0.13 42;
+    --chart-2: 33 0.09 48;
+    --chart-3: 72 0.08 60;
+    --chart-4: 45 0.1 50;
+    --chart-5: 80 0.05 70;
+
+    --sidebar: 95 0.015 75;
+    --sidebar-foreground: 22 0.04 50;
+    --sidebar-primary: 33 0.09 48;
+    --sidebar-primary-foreground: 97 0.01 80;
+    --sidebar-accent: 90 0.02 70;
+    --sidebar-accent-foreground: 35 0.06 48;
+    --sidebar-border: 88 0.02 72;
+    --sidebar-ring: 63 0.13 42;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "General Sans", sans-serif;
+  }
+}
